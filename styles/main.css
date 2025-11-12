@@ -1001,7 +1001,7 @@ button[aria-label]::before {
   display: flex;
   width: 9.375rem;
   height: 9.375rem;
-  background: url(../../images/section/illu-accent.svg) center no-repeat;
+  background: url(../images/section/illu-accent.svg) center no-repeat;
   background-size: contain;
 }
 .section--illustration-black {
@@ -1017,7 +1017,7 @@ button[aria-label]::before {
   display: flex;
   width: 9.375rem;
   height: 9.375rem;
-  background: url(../../images/section/illu-black.svg) center no-repeat;
+  background: url(../images/section/illu-black.svg) center no-repeat;
   background-size: contain;
 }
 .section__header {
