@@ -1,0 +1,37 @@
+@use '../helpers' as *;
+
+.founders {
+    padding-block: rem(100) rem(140);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(80);
+        align-items: center;
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-75);
+            right: rem(-75);
+            display: flex;
+            width: rem(140);
+            height: rem(140);
+            background: url(../../images/founders/illu-title.svg) center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: rem(20);
+
+        @include tablet-above {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

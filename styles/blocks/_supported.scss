@@ -1,0 +1,50 @@
+@use '../helpers' as *;
+
+.supported {
+    padding-block: rem(120) rem(140);
+    background-color: var(--color-light-accent);
+
+    @include mobile {
+        padding-block: rem(80) rem(100);
+    }
+
+    &__inner {
+        border-block: rem(1.5) solid var(--color-black);
+        padding-block: rem(20);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(30);
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(22);
+        line-height: 140%;
+        letter-spacing: -0.02em;
+    }
+
+    &__platform {
+        &-list {
+            display: flex;
+            column-gap: rem(20);
+            align-items: center;
+
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fluid(275, 160);
+            height: fluid(84, 60);
+        }
+    }
+}

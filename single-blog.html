@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pod-of-cast | Blog Detail</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a 
+                    href="/" 
+                    class="header__logo logo" 
+                    aria-label="Home" 
+                    title="Home"
+                >
+                    <img 
+                        src="./images/logo.svg" 
+                        alt="" 
+                        class="logo__image"
+                        width="74" height="74"
+                    >
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="./page-podcasts.html" class="header__menu-link">
+                                    Episodes
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="./about.html" class="header__menu-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="header__menu-item has-children" data-js-header-has-children>
+                                <a href="/" class="header__menu-link">
+                                    More
+                                </a>
+                                <ul class="header__submenu-list" data-js-header-submenu>
+                                    <li class="header__submenu-item">
+                                        <a href="/" class="header__submenu-link">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="/" class="header__submenu-link">
+                                            Features
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="./index.html#become-sponsor" class="header__submenu-link">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="./page-blog.html" class="header__submenu-link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__actions hidden-mobile">
+                        <a href="./page-podcasts.html" class="header__actions-link button button--transparent">
+                            RECENT EPISODES
+                        </a>
+                        <a href="" class="header__actions-link button button--black button--small-black">
+                            SUBSCRIBE
+                        </a>
+                    </div>
+                </div>
+                <button 
+                    class="header__burger-button burger-button visible-mobile"
+                    type="button"
+                    aria-label="Open menu"
+                    title="Open menu"
+                    data-js-header-burger-button
+                >
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-single-news container">
+                <header class="hero-single-news__header">
+                    <a href="./page-blog.html" class="hero-single-news__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4424 8.52905L9.95638 12.0001L13.4424 15.4711" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="hero-single-news__header-text">Back to articles</p>
+                    </a>
+                    <p class="hero-single-news__header-text">Sep 12, 2021</p>
+                </header>
+                <div class="hero-single-news__body">
+                    <header class="hero-single-news__body-header">
+                        <p class="hero-single-news__body-category">TIPS & TRICKS</p>
+                        <h1 class="hero-single-news__body-title h2">Doodle Artwork 101</h1>
+                    </header>
+                    <div class="hero-single-news__tags tags">
+                        <ul class="tags__list">
+                            <li class="tags__item">
+                                <p>art</p>
+                            </li>
+                            <li class="tags__item">
+                                <p>tips and trick</p>
+                            </li>
+                            <li class="tags__item">
+                                <p>creative</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hero-single-news__soc1al-list soc1al__list">
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.84156 21C6.41531 21 4.15363 20.2943 2.25 19.0767C3.86624 19.1813 6.71855 18.9308 8.49268 17.2386C5.82381 17.1161 4.6202 15.0692 4.4632 14.1945C4.68997 14.2819 5.77148 14.3869 6.382 14.142C3.31192 13.3722 2.84095 10.678 2.94561 9.85573C3.52125 10.2581 4.49809 10.3981 4.88185 10.3631C2.02109 8.31618 3.05027 5.23707 3.55613 4.57226C5.60912 7.4165 8.6859 9.01393 12.4923 9.10278C12.4205 8.78802 12.3826 8.46032 12.3826 8.12373C12.3826 5.70819 14.3351 3.75 16.7435 3.75C18.0019 3.75 19.1358 4.28457 19.9318 5.13963C20.7727 4.94258 22.0382 4.4813 22.6569 4.0824C22.3451 5.20208 21.3742 6.13612 20.7869 6.48231C20.7821 6.47048 20.7918 6.49408 20.7869 6.48231C21.3028 6.40428 22.6986 6.13603 23.25 5.76192C22.9773 6.39094 21.948 7.4368 21.1033 8.02232C21.2605 14.9535 15.9574 21 8.84156 21Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5332 6.86663C18.5332 7.63983 17.9064 8.26663 17.1332 8.26663C16.36 8.26663 15.7332 7.63983 15.7332 6.86663C15.7332 6.09343 16.36 5.46663 17.1332 5.46663C17.9064 5.46663 18.5332 6.09343 18.5332 6.86663Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 16.6666C14.5772 16.6666 16.6665 14.5773 16.6665 12C16.6665 9.42263 14.5772 7.33329 11.9998 7.33329C9.42251 7.33329 7.33317 9.42263 7.33317 12C7.33317 14.5773 9.42251 16.6666 11.9998 16.6666ZM11.9998 14.8C13.5462 14.8 14.7998 13.5464 14.7998 12C14.7998 10.4536 13.5462 9.19996 11.9998 9.19996C10.4534 9.19996 9.19984 10.4536 9.19984 12C9.19984 13.5464 10.4534 14.8 11.9998 14.8Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6665 11.6266C2.6665 8.49033 2.6665 6.92218 3.27687 5.72428C3.81376 4.67057 4.67045 3.81388 5.72416 3.27699C6.92206 2.66663 8.49021 2.66663 11.6265 2.66663H12.3732C15.5095 2.66663 17.0776 2.66663 18.2755 3.27699C19.3292 3.81388 20.1859 4.67057 20.7228 5.72428C21.3332 6.92218 21.3332 8.49033 21.3332 11.6266V12.3733C21.3332 15.5096 21.3332 17.0777 20.7228 18.2756C20.1859 19.3293 19.3292 20.186 18.2755 20.7229C17.0776 21.3333 15.5095 21.3333 12.3732 21.3333H11.6265C8.49021 21.3333 6.92206 21.3333 5.72416 20.7229C4.67045 20.186 3.81376 19.3293 3.27687 18.2756C2.6665 17.0777 2.6665 15.5096 2.6665 12.3733V11.6266ZM11.6265 4.53329H12.3732C13.9721 4.53329 15.0591 4.53474 15.8992 4.60339C16.7176 4.67025 17.1361 4.79145 17.4281 4.9402C18.1305 5.29813 18.7017 5.86926 19.0596 6.57173C19.2084 6.86367 19.3295 7.28219 19.3964 8.10056C19.4651 8.94073 19.4665 10.0277 19.4665 11.6266V12.3733C19.4665 13.9722 19.4651 15.0592 19.3964 15.8994C19.3295 16.7177 19.2084 17.1362 19.0596 17.4282C18.7017 18.1307 18.1305 18.7018 17.4281 19.0597C17.1361 19.2085 16.7176 19.3297 15.8992 19.3965C15.0591 19.4652 13.9721 19.4666 12.3732 19.4666H11.6265C10.0276 19.4666 8.94061 19.4652 8.10044 19.3965C7.28207 19.3297 6.86355 19.2085 6.57161 19.0597C5.86913 18.7018 5.29801 18.1307 4.94008 17.4282C4.79133 17.1362 4.67013 16.7177 4.60327 15.8994C4.53462 15.0592 4.53317 13.9722 4.53317 12.3733V11.6266C4.53317 10.0277 4.53462 8.94073 4.60327 8.10056C4.67013 7.28219 4.79133 6.86367 4.94008 6.57173C5.29801 5.86926 5.86913 5.29813 6.57161 4.9402C6.86355 4.79145 7.28207 4.67025 8.10044 4.60339C8.94061 4.53474 10.0276 4.53329 11.6265 4.53329Z" fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.33822 14.8445C6.45542 13.8741 6.85342 13.3307 7.60344 12.7737C8.67659 12.0194 10.0171 12.4461 10.0171 12.4461V9.91474C10.343 9.90641 10.669 9.92573 10.9914 9.97247V13.2301C10.9914 13.2301 9.65125 12.8034 8.5781 13.5581C7.82849 14.1147 7.42967 14.6584 7.31288 15.6289C7.30921 16.1558 7.4081 16.8446 7.86349 17.4402C7.7509 17.3825 7.63614 17.3167 7.5192 17.2428C6.51606 16.5692 6.33333 15.5586 6.33822 14.8445ZM16.5264 5.23424C15.7881 4.42529 15.509 3.60854 15.4081 3.03479H16.3367C16.3367 3.03479 16.1516 4.53918 17.501 6.01861L17.5197 6.0385C17.156 5.80972 16.8225 5.53968 16.5264 5.23424ZM21 7.52768V10.7198C21 10.7198 19.815 10.6734 18.938 10.4503C17.7135 10.1382 16.9264 9.65965 16.9264 9.65965C16.9264 9.65965 16.3827 9.31837 16.3388 9.29457V15.8863C16.3388 16.2533 16.2382 17.1699 15.9318 17.9344C15.5318 18.9345 14.9144 19.5909 14.8009 19.7251C14.8009 19.7251 14.05 20.6124 12.7254 21.21C11.5314 21.749 10.4831 21.7354 10.1697 21.749C10.1697 21.749 8.35753 21.8208 6.72686 20.761C6.37424 20.5274 6.04508 20.2629 5.74365 19.9708L5.75179 19.9767C7.38287 21.0364 9.19464 20.9646 9.19464 20.9646C9.5084 20.951 10.5567 20.9646 11.7503 20.4256C13.0738 19.828 13.8258 18.9407 13.8258 18.9407C13.9381 18.8065 14.5583 18.1501 14.9567 17.1496C15.2624 16.3855 15.3637 15.4685 15.3637 15.1015V8.51059C15.4076 8.53477 15.9509 8.87606 15.9509 8.87606C15.9509 8.87606 16.7384 9.35503 17.9629 9.66667C18.8403 9.88978 20.025 9.93619 20.025 9.93619V7.43485C20.4303 7.52573 20.7758 7.55031 21 7.52768Z" fill="black" />
+                                <path d="M20.0252 7.43485V9.93541C20.0252 9.93541 18.8405 9.889 17.9631 9.66589C16.7386 9.35386 15.9511 8.87528 15.9511 8.87528C15.9511 8.87528 15.4078 8.53399 15.3639 8.50981V15.1023C15.3639 15.4693 15.2634 16.3863 14.9569 17.1504C14.5569 18.1509 13.9395 18.8073 13.826 18.9415C13.826 18.9415 13.0747 19.8288 11.7505 20.4264C10.5569 20.9654 9.50859 20.9518 9.19483 20.9654C9.19483 20.9654 7.38306 21.0372 5.75198 19.9774L5.74384 19.9716C5.57163 19.8048 5.40953 19.6288 5.25834 19.4442C4.73784 18.8096 4.41879 18.0592 4.33862 17.8451C4.33848 17.8442 4.33848 17.8432 4.33862 17.8423C4.20961 17.4702 3.93858 16.5767 3.97561 15.7112C4.04113 14.1841 4.57831 13.2469 4.72034 13.0121C5.09649 12.3718 5.58572 11.7989 6.16626 11.3189C6.67855 10.9047 7.25921 10.5752 7.88443 10.3438C8.56031 10.0721 9.28406 9.92649 10.0169 9.91474V12.4461C10.0169 12.4461 8.67636 12.021 7.60363 12.7737C6.85361 13.3307 6.4556 13.8741 6.3384 14.8445C6.33352 15.5586 6.51624 16.5692 7.51857 17.2432C7.63551 17.3173 7.75027 17.3831 7.86286 17.4406C8.03797 17.6682 8.2511 17.8666 8.49364 18.0276C9.47278 18.6474 10.2932 18.6907 11.3423 18.2882C12.0419 18.019 12.5685 17.4125 12.8127 16.7405C12.9661 16.3208 12.9641 15.8984 12.9641 15.4615V3.03479H15.4058C15.5067 3.60854 15.7859 4.42529 16.5241 5.23424C16.8202 5.53968 17.1538 5.80972 17.5175 6.0385C17.6249 6.14966 18.1743 6.69923 18.8796 7.03662C19.2442 7.21102 19.6286 7.34464 20.0252 7.43485Z" fill="black" />
+                                <path d="M3.3667 17.0677V17.0697L3.42729 17.2339C3.42033 17.2148 3.39781 17.1567 3.3667 17.0677Z" fill="black" />
+                                <path d="M7.88461 10.3437C7.25939 10.5751 6.67873 10.9047 6.16644 11.3188C5.58572 11.7999 5.09661 12.374 4.72093 13.0155C4.57891 13.2495 4.04172 14.1876 3.9762 15.7146C3.93917 16.5801 4.2102 17.4737 4.33921 17.8458C4.33907 17.8467 4.33907 17.8476 4.33921 17.8485C4.4206 18.0607 4.73843 18.8112 5.25893 19.4477C5.41012 19.6322 5.57222 19.8083 5.74443 19.975C5.19268 19.6093 4.7006 19.1671 4.28427 18.6629C3.76825 18.0338 3.45001 17.2912 3.36699 17.072C3.36689 17.0704 3.36689 17.0688 3.36699 17.0673V17.0645C3.23758 16.6928 2.96573 15.7989 3.00358 14.9322C3.0691 13.4052 3.60628 12.4679 3.74831 12.2331C4.12388 11.5915 4.613 11.0174 5.19382 10.5364C5.706 10.1221 6.28669 9.79254 6.91199 9.56131C7.30202 9.40621 7.70833 9.29179 8.1239 9.22002C8.75019 9.11524 9.38984 9.10616 10.0191 9.19311V9.91469C9.2856 9.92619 8.56113 10.0718 7.88461 10.3437Z" fill="black" />
+                                <path d="M15.4078 3.03476H12.9661V15.4619C12.9661 15.8987 12.9661 16.32 12.8147 16.7408C12.5681 17.4125 12.0435 18.019 11.3444 18.2881C10.2948 18.6922 9.47442 18.6474 8.49569 18.0276C8.25273 17.8673 8.03905 17.6696 7.86328 17.4425C8.69713 17.8688 9.44349 17.8614 10.3681 17.5057C11.0668 17.2366 11.5922 16.6301 11.838 15.958C11.9919 15.5383 11.9898 15.1159 11.9898 14.6795V2.25H15.3615C15.3615 2.25 15.3236 2.55891 15.4078 3.03476ZM20.0252 6.74328V7.43483C19.6293 7.34447 19.2456 7.21085 18.8816 7.0366C18.1764 6.69921 17.627 6.14964 17.5195 6.03848C17.6442 6.11693 17.7736 6.1883 17.907 6.25222C18.7644 6.66255 19.6089 6.78502 20.0252 6.74328Z" fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./images/hero/illustration-left.svg"  alt="" class="hero__illustration-left hidden-mobile">
+            <img src="./images/hero/illustration-right.png" alt="" class="hero__illustration-right hero__illustration-right--offset hidden-mobile">
+        </section>
+        <section class="news">
+            <div class="news__image-wrapper">
+                <img 
+                    src="./images/article/single-2.jpg" 
+                    alt="" 
+                    class="news__image"
+                    width="1440" height="960" loading="lazy"
+                >
+            </div>
+            <div class="news__inner container">
+                <div class="news__body">
+                    <h2 class="news__title h4">Doodle for our podcast background room</h2>
+                    <div class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis cursus dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here
+                        Quis dictum cursus faucibus mattis dignissim. <br> Pellentes
+                        que purus in sed sodales in mauris molestie. Eleifend est cons
+                        ctetur interdum eu in auctor. Gravida leo et.
+                    </div>
+                </div>
+                <div class="about-section__quote quote">
+                    <div class="quote__title">
+                        <h3 class="quote__marks h1">“</h3>
+                        <h3 class="quote__text">
+                            One of the best daily podcasts that <br> covers every topic on Spotify.
+                        </h3>
+                    </div>
+                    <div class="quote__author author">
+                        <img 
+                            src="./images/about-section/avatar.png" 
+                            alt="" 
+                            class="author__avatar"
+                            width="48" height="48" loading="lazy"
+                        >
+                        <p class="author__name">John Smith,</p>
+                        <div class="author__position">
+                            <img src="./images/about-section/spotify.png" alt="" class="author__logo">
+                            <p class="author__post">Social Community Manager</p>
+                        </div>
+                    </div>
+
+                    <img src="./images/about-section/illustration-left.svg" alt="" class="quote__illustration-left hidden-mobile">
+                    <img src="./images/about-section/illustration-right.svg" alt="" class="quote__illustration-right hidden-mobile">
+                </div>
+               
+                <div class="news__text">
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                    </ol>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pellentesque at bibendum euismod tellus duis curs us dignissim odio. Sit vulputate et integer in.
+                        Sit vel, senectus iaculis morbi. Amet interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante enim eget viverra at porttitor accumsan. Orci non here</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="articles articles--bg-light-accent">
+            <div class="articles__inner container">
+                <div class="articles__header section__header">
+                    <h2 class="articles__title">Related Article</h2>
+                    <p class="articles__description section__description">News, tips, tricks and more</p>
+                </div>
+                <div class="articles__body">
+                    <ul class="articles__body-list">
+                        <img src="./images/article/illustration-left.png" alt="" class="articles__illustration-left hidden-mobile">
+                        <img src="./images/article/illustration-right.png" alt="" class="articles__illustration-right hidden-mobile">
+                        <li class="articles__body-item article-card article-card--accent">
+                            <img src="./images/article/1.png" alt="" class="article-card__image">
+                            <div class="article-card__body">
+                                <div class="article-card__name">
+                                    <p class="article-card__type">PODCAST</p>
+                                    <h3 class="article-card__title article-card__title--accent">Setup your own podcast</h3>
+                                </div>
+                                <p class="article-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+                                <div class="article-card__footer">
+                                    <ul class="article-card__tags-list">
+                                        <li class="article-card__tags-item">
+                                            <p class="article-card__tags-text">business</p>
+                                        </li>
+                                        <li class="article-card__tags-item">
+                                            <p class="article-card__tags-text">startup</p>
+                                        </li>
+                                    </ul>
+                                    <time datetime="2021-09-14" class="article-card__date">Sep 14, 2021</time>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="articles__body-item article-card article-card--normal">
+                            <img src="./images/article/2.png" alt="" class="article-card__image">
+                            <div class="article-card__body">
+                                <div class="article-card__name">
+                                    <p class="article-card__type">TIPS & TRICK</p>
+                                    <h3 class="article-card__title article-card__title--normal">Doodle artwork 101</h3>
+                                </div>
+                                <p class="article-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+                                <div class="article-card__footer">
+                                    <ul class="article-card__tags-list">
+                                        <li class="article-card__tags-item">
+                                            <p class="article-card__tags-text">art</p>
+                                        </li>
+                                        <li class="article-card__tags-item">
+                                            <p class="article-card__tags-text">creative</p>
+                                        </li>
+                                    </ul>
+                                    <time datetime="2021-09-14" class="article-card__date">Sep 12, 2021</time>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./page-blog.html" class="articles__button button button--black">BROWSE ALL</a>
+            </div>
+        </section>
+        <section class="section--illustration-accent app">
+            <img src="./images/app/illustration-mobile-right.png" alt="" class="app__illustration-right hidden-mobile">
+            <img src="./images/app/illustration-mobile-left.png" alt="" class="app__illustration-left hidden-mobile">
+            <img src="./images/app/illustration-sparkle.png" alt="" class="app__illustration-sparkle app__illustration-sparkle-big hidden-mobile">
+            <img src="./images/app/illustration-sparkle.png" alt="" class="app__illustration-sparkle app__illustration-sparkle-medium hidden-mobile">
+            <img src="./images/app/illustration-sparkle.png" alt="" class="app__illustration-sparkle app__illustration-sparkle-small hidden-mobile">
+            <img src="./images/app/illustration-circle.png" alt="" class="app__illustration-circle hidden-mobile">
+
+            <div class="app__inner container">
+                <div class="app__body">
+                    <p class="app__marks">BETA</p>
+                    <div class="app__header section__header">
+                        <h2 class="app__title">Available now <br> Pod of Cast App</h2>
+                        <p class="app__description section__description">We just launched our podcast app!</p>
+                    </div>
+                </div>
+                <div class="app__action">
+                    <img src="./images/app/illustration-button.png" alt="" class="app__action-illustration">
+                    <a href="/" class="app__action-button button button--black">DOWNLOAD NOW</a>
+                    <div class="app__soc1al">
+                        <p class="app__soc1al-text">Content also available on:</p>
+                        <ul class="app__soc1al-list soc1al__list">
+                            <li class="app__soc1al-item soc1al__item">
+                                <a href="" class="app__soc1al-link soc1al__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_301_3600)">
+                                        <path d="M10.5 7.63641V11.2733V12.7269V16.3637H13.5001V12.7269V11.2733V7.63641H10.5Z" fill="black" />
+                                        <path d="M1.50002 12.6823C2.32845 12.6823 3.00003 12.0107 3.00003 11.1823C3.00003 10.3538 2.32845 9.68225 1.50002 9.68225C0.671581 9.68225 0 10.3538 0 11.1823C0 12.0107 0.671581 12.6823 1.50002 12.6823Z" fill="black" />
+                                        <path d="M1.50002 14.3178C2.32845 14.3178 3.00003 13.6462 3.00003 12.8178C3.00003 11.9893 2.32845 11.3177 1.50002 11.3177C0.671581 11.3177 0 11.9893 0 12.8178C0 13.6462 0.671581 14.3178 1.50002 14.3178Z" fill="black" />
+                                        <path d="M3.00003 11.1823H0V12.8186H3.00003V11.1823Z" fill="black" />
+                                        <path d="M22.5 14.3178C23.3285 14.3178 24 13.6462 24 12.8178C24 11.9893 23.3285 11.3177 22.5 11.3177C21.6716 11.3177 21 11.9893 21 12.8178C21 13.6462 21.6716 14.3178 22.5 14.3178Z" fill="black" />
+                                        <path d="M22.5 12.6823C23.3285 12.6823 24 12.0107 24 11.1823C24 10.3538 23.3285 9.68225 22.5 9.68225C21.6716 9.68225 21 10.3538 21 11.1823C21 12.0107 21.6716 12.6823 22.5 12.6823Z" fill="black" />
+                                        <path d="M21 12.8186H24V11.1823H21V12.8186Z" fill="black" />
+                                        <path d="M6.68165 17.5911C7.51006 17.5911 8.18165 16.9196 8.18165 16.0911C8.18165 15.2627 7.51006 14.5911 6.68165 14.5911C5.85321 14.5911 5.18164 15.2627 5.18164 16.0911C5.18164 16.9196 5.85321 17.5911 6.68165 17.5911Z" fill="black" />
+                                        <path d="M6.68165 19.2276C7.51006 19.2276 8.18165 18.5561 8.18165 17.7276C8.18165 16.8992 7.51006 16.2275 6.68165 16.2275C5.85321 16.2275 5.18164 16.8992 5.18164 17.7276C5.18164 18.5561 5.85321 19.2276 6.68165 19.2276Z" fill="black" />
+                                        <path d="M8.18165 16.0911H5.18164V17.7275H8.18165V16.0911Z" fill="black" />
+                                        <path d="M6.68165 7.77245C7.51006 7.77245 8.18165 7.10088 8.18165 6.27247C8.18165 5.44404 7.51006 4.77246 6.68165 4.77246C5.85321 4.77246 5.18164 5.44404 5.18164 6.27247C5.18164 7.10088 5.85321 7.77245 6.68165 7.77245Z" fill="black" />
+                                        <path d="M6.68165 13.0903C7.51006 13.0903 8.18165 12.4187 8.18165 11.5903C8.18165 10.7618 7.51006 10.0903 6.68165 10.0903C5.85321 10.0903 5.18164 10.7618 5.18164 11.5903C5.18164 12.4187 5.85321 13.0903 6.68165 13.0903Z" fill="black" />
+                                        <path d="M8.18165 6.27246H5.18164V11.6248H8.18165V6.27246Z" fill="black" />
+                                        <path d="M17.3184 9.40975C18.1468 9.40975 18.8184 8.73818 18.8184 7.90974C18.8184 7.08131 18.1468 6.40973 17.3184 6.40973C16.49 6.40973 15.8184 7.08131 15.8184 7.90974C15.8184 8.73818 16.49 9.40975 17.3184 9.40975Z" fill="black" />
+                                        <path d="M17.3184 7.77245C18.1468 7.77245 18.8184 7.10088 18.8184 6.27247C18.8184 5.44404 18.1468 4.77246 17.3184 4.77246C16.49 4.77246 15.8184 5.44404 15.8184 6.27247C15.8184 7.10088 16.49 7.77245 17.3184 7.77245Z" fill="black" />
+                                        <path d="M15.8179 7.90882H18.8179V6.27246H15.8179V7.90882Z" fill="black" />
+                                        <path d="M12 4.63643C12.8285 4.63643 13.5001 3.96486 13.5001 3.13642C13.5001 2.30799 12.8285 1.63641 12 1.63641C11.1716 1.63641 10.5 2.30799 10.5 3.13642C10.5 3.96486 11.1716 4.63643 12 4.63643Z" fill="black" />
+                                        <path d="M12 3.00001C12.8285 3.00001 13.5001 2.32844 13.5001 1.50001C13.5001 0.671577 12.8285 0 12 0C11.1716 0 10.5 0.671577 10.5 1.50001C10.5 2.32844 11.1716 3.00001 12 3.00001Z" fill="black" />
+                                        <path d="M10.5 3.13638H13.5001V1.5H10.5V3.13638Z" fill="black" />
+                                        <path d="M12 24C12.8285 24 13.5001 23.3284 13.5001 22.5C13.5001 21.6716 12.8285 21 12 21C11.1716 21 10.5 21.6716 10.5 22.5C10.5 23.3284 11.1716 24 12 24Z" fill="black" />
+                                        <path d="M12 22.364C12.8285 22.364 13.5001 21.6924 13.5001 20.864C13.5001 20.0355 12.8285 19.364 12 19.364C11.1716 19.364 10.5 20.0355 10.5 20.864C10.5 21.6924 11.1716 22.364 12 22.364Z" fill="black" />
+                                        <path d="M10.5 22.5003H13.5001V20.864H10.5V22.5003Z" fill="black" />
+                                        <path d="M17.3184 19.2276C18.1468 19.2276 18.8184 18.5561 18.8184 17.7276C18.8184 16.8992 18.1468 16.2275 17.3184 16.2275C16.49 16.2275 15.8184 16.8992 15.8184 17.7276C15.8184 18.5561 16.49 19.2276 17.3184 19.2276Z" fill="black" />
+                                        <path d="M17.3184 13.9097C18.1468 13.9097 18.8184 13.2382 18.8184 12.4097C18.8184 11.5813 18.1468 10.9097 17.3184 10.9097C16.49 10.9097 15.8184 11.5813 15.8184 12.4097C15.8184 13.2382 16.49 13.9097 17.3184 13.9097Z" fill="black" />
+                                        <path d="M15.8179 17.7271H18.8179V12.4089H15.8179V17.7271Z" fill="black" />
+                                        <path d="M12 9.13646C12.8285 9.13646 13.5001 8.46482 13.5001 7.63645C13.5001 6.80802 12.8285 6.13641 12 6.13641C11.1716 6.13641 10.5 6.80802 10.5 7.63645C10.5 8.46482 11.1716 9.13646 12 9.13646Z" fill="black" />
+                                        <path d="M12 17.864C12.8285 17.864 13.5001 17.1924 13.5001 16.364C13.5001 15.5355 12.8285 14.864 12 14.864C11.1716 14.864 10.5 15.5355 10.5 16.364C10.5 17.1924 11.1716 17.864 12 17.864Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_3600">
+                                        <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="app__soc1al-item soc1al__item">
+                                <a href="" class="app__soc1al-link soc1al__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_301_3629)">
+                                        <path d="M12 0C9.62662 0 7.30654 0.70378 5.33313 2.02233C3.35979 3.34094 1.82173 5.21511 0.913423 7.40778C0.00518715 9.60052 -0.232448 12.0133 0.230606 14.3411C0.69359 16.6689 1.83646 18.807 3.51471 20.4853C5.19295 22.1635 7.33118 23.3064 9.65895 23.7694C11.9867 24.2324 14.3995 23.9948 16.5922 23.0865C18.7849 22.1783 20.6591 20.6402 21.9777 18.6668C23.2962 16.6935 24 14.3734 24 12C24 8.81738 22.7357 5.76516 20.4853 3.51474C18.2348 1.26425 15.1826 0 12 0ZM17.5068 17.3057C17.4557 17.3905 17.3883 17.4643 17.3085 17.5228C17.2286 17.5813 17.138 17.6234 17.0417 17.6465C16.9455 17.6697 16.8456 17.6735 16.7479 17.6577C16.6501 17.6419 16.5565 17.6069 16.4725 17.5547C13.6569 15.8308 10.1133 15.4477 5.93776 16.3959C5.84275 16.4185 5.74425 16.4221 5.64784 16.4064C5.5515 16.3906 5.45914 16.3559 5.37635 16.3043C5.29348 16.2526 5.22171 16.185 5.16517 16.1054C5.10862 16.0257 5.06855 15.9357 5.04712 15.8404C5.02429 15.7448 5.02066 15.6457 5.03623 15.5486C5.05186 15.4516 5.08642 15.3586 5.13801 15.275C5.1896 15.1914 5.25725 15.1188 5.3369 15.0613C5.41663 15.0039 5.50689 14.9627 5.60253 14.9401C10.1708 13.8962 14.0974 14.3464 17.2578 16.2809C17.4264 16.384 17.5473 16.5498 17.594 16.7418C17.6407 16.9339 17.6093 17.1367 17.5068 17.3057ZM18.9721 14.0399C18.8383 14.2458 18.6304 14.3923 18.3916 14.4494C18.1528 14.5064 17.9012 14.4695 17.6888 14.3464C14.0474 12.3151 9.74858 11.8122 5.73664 12.9481C5.61182 13.0177 5.47296 13.0585 5.33034 13.0674C5.18765 13.0764 5.04481 13.0533 4.91224 12.9998C4.77967 12.9464 4.66079 12.864 4.56424 12.7586C4.46769 12.6532 4.39592 12.5275 4.35425 12.3909C4.31257 12.2541 4.30203 12.1098 4.32339 11.9685C4.34475 11.8271 4.39746 11.6924 4.47767 11.5741C4.55788 11.4558 4.66358 11.357 4.78694 11.2848C4.91036 11.2127 5.04831 11.1691 5.19072 11.1572C7.43004 10.5126 9.7756 10.322 12.0896 10.5967C14.4036 10.8713 16.6394 11.6057 18.6656 12.7566C18.8715 12.8904 19.018 13.0982 19.0751 13.337C19.1321 13.5759 19.0952 13.8275 18.9721 14.0399ZM19.0966 10.6401C15.2658 8.34155 8.85878 8.13085 5.16203 9.25138C4.87755 9.33779 4.57038 9.30758 4.30817 9.16744C4.04596 9.02737 3.85015 8.78886 3.76379 8.50436C3.67743 8.21994 3.70759 7.91276 3.8477 7.65052C3.98774 7.38834 4.22628 7.19251 4.51076 7.10617C8.75343 5.82283 15.7925 6.07184 20.2459 8.70548C20.4748 8.86935 20.6337 9.11336 20.6909 9.38905C20.7481 9.66468 20.6994 9.95178 20.5546 10.1933C20.4097 10.4347 20.1793 10.6127 19.9092 10.6919C19.639 10.7712 19.3489 10.7458 19.0966 10.6209V10.6401Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_3629">
+                                        <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="app__soc1al-item soc1al__item">
+                                <a href="" class="app__soc1al-link soc1al__link">
+                                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.95835 0.235085C1.47296 0.308675 0.279778 1.47175 0.18338 2.95583C0.091023 4.37769 0 6.12724 0 7.5C0 8.87276 0.0910229 10.6223 0.18338 12.0442C0.279778 13.5283 1.47296 14.6913 2.95835 14.7649C5.10929 14.8715 8.1836 15 10.5 15C12.8164 15 15.8907 14.8715 18.0417 14.7649C19.527 14.6913 20.7202 13.5283 20.8166 12.0442C20.909 10.6223 21 8.87276 21 7.5C21 6.12724 20.909 4.3777 20.8166 2.95583C20.7202 1.47175 19.527 0.308675 18.0417 0.235085C15.8907 0.128521 12.8164 0 10.5 0C8.1836 0 5.10929 0.128521 2.95835 0.235085ZM14.25 7.5L8.25 10.5V4.5L14.25 7.5Z" fill="black" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__body">
+                <div class="footer__info">
+                    <div class="footer__info-header">
+                        <img src="./images/logo.svg" alt="" class="footer__info-image">
+                        <p class="footer__info-date">©2021.</p>
+                    </div>
+                    <p class="footer__info-description">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                    <ul class="footer__soc1al-list soc1al__list">
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.84156 21C6.41531 21 4.15363 20.2943 2.25 19.0767C3.86624 19.1813 6.71855 18.9308 8.49268 17.2386C5.82381 17.1161 4.6202 15.0692 4.4632 14.1945C4.68997 14.2819 5.77148 14.3869 6.382 14.142C3.31192 13.3722 2.84095 10.678 2.94561 9.85573C3.52125 10.2581 4.49809 10.3981 4.88185 10.3631C2.02109 8.31618 3.05027 5.23707 3.55613 4.57226C5.60912 7.4165 8.6859 9.01393 12.4923 9.10278C12.4205 8.78802 12.3826 8.46032 12.3826 8.12373C12.3826 5.70819 14.3351 3.75 16.7435 3.75C18.0019 3.75 19.1358 4.28457 19.9318 5.13963C20.7727 4.94258 22.0382 4.4813 22.6569 4.0824C22.3451 5.20208 21.3742 6.13612 20.7869 6.48231C20.7821 6.47048 20.7918 6.49408 20.7869 6.48231C21.3028 6.40428 22.6986 6.13603 23.25 5.76192C22.9773 6.39094 21.948 7.4368 21.1033 8.02232C21.2605 14.9535 15.9574 21 8.84156 21Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5332 6.86663C18.5332 7.63983 17.9064 8.26663 17.1332 8.26663C16.36 8.26663 15.7332 7.63983 15.7332 6.86663C15.7332 6.09343 16.36 5.46663 17.1332 5.46663C17.9064 5.46663 18.5332 6.09343 18.5332 6.86663Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 16.6666C14.5772 16.6666 16.6665 14.5773 16.6665 12C16.6665 9.42263 14.5772 7.33329 11.9998 7.33329C9.42251 7.33329 7.33317 9.42263 7.33317 12C7.33317 14.5773 9.42251 16.6666 11.9998 16.6666ZM11.9998 14.8C13.5462 14.8 14.7998 13.5464 14.7998 12C14.7998 10.4536 13.5462 9.19996 11.9998 9.19996C10.4534 9.19996 9.19984 10.4536 9.19984 12C9.19984 13.5464 10.4534 14.8 11.9998 14.8Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6665 11.6266C2.6665 8.49033 2.6665 6.92218 3.27687 5.72428C3.81376 4.67057 4.67045 3.81388 5.72416 3.27699C6.92206 2.66663 8.49021 2.66663 11.6265 2.66663H12.3732C15.5095 2.66663 17.0776 2.66663 18.2755 3.27699C19.3292 3.81388 20.1859 4.67057 20.7228 5.72428C21.3332 6.92218 21.3332 8.49033 21.3332 11.6266V12.3733C21.3332 15.5096 21.3332 17.0777 20.7228 18.2756C20.1859 19.3293 19.3292 20.186 18.2755 20.7229C17.0776 21.3333 15.5095 21.3333 12.3732 21.3333H11.6265C8.49021 21.3333 6.92206 21.3333 5.72416 20.7229C4.67045 20.186 3.81376 19.3293 3.27687 18.2756C2.6665 17.0777 2.6665 15.5096 2.6665 12.3733V11.6266ZM11.6265 4.53329H12.3732C13.9721 4.53329 15.0591 4.53474 15.8992 4.60339C16.7176 4.67025 17.1361 4.79145 17.4281 4.9402C18.1305 5.29813 18.7017 5.86926 19.0596 6.57173C19.2084 6.86367 19.3295 7.28219 19.3964 8.10056C19.4651 8.94073 19.4665 10.0277 19.4665 11.6266V12.3733C19.4665 13.9722 19.4651 15.0592 19.3964 15.8994C19.3295 16.7177 19.2084 17.1362 19.0596 17.4282C18.7017 18.1307 18.1305 18.7018 17.4281 19.0597C17.1361 19.2085 16.7176 19.3297 15.8992 19.3965C15.0591 19.4652 13.9721 19.4666 12.3732 19.4666H11.6265C10.0276 19.4666 8.94061 19.4652 8.10044 19.3965C7.28207 19.3297 6.86355 19.2085 6.57161 19.0597C5.86913 18.7018 5.29801 18.1307 4.94008 17.4282C4.79133 17.1362 4.67013 16.7177 4.60327 15.8994C4.53462 15.0592 4.53317 13.9722 4.53317 12.3733V11.6266C4.53317 10.0277 4.53462 8.94073 4.60327 8.10056C4.67013 7.28219 4.79133 6.86367 4.94008 6.57173C5.29801 5.86926 5.86913 5.29813 6.57161 4.9402C6.86355 4.79145 7.28207 4.67025 8.10044 4.60339C8.94061 4.53474 10.0276 4.53329 11.6265 4.53329Z" fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1al__item">
+                            <a href="" class="soc1al__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.33822 14.8445C6.45542 13.8741 6.85342 13.3307 7.60344 12.7737C8.67659 12.0194 10.0171 12.4461 10.0171 12.4461V9.91474C10.343 9.90641 10.669 9.92573 10.9914 9.97247V13.2301C10.9914 13.2301 9.65125 12.8034 8.5781 13.5581C7.82849 14.1147 7.42967 14.6584 7.31288 15.6289C7.30921 16.1558 7.4081 16.8446 7.86349 17.4402C7.7509 17.3825 7.63614 17.3167 7.5192 17.2428C6.51606 16.5692 6.33333 15.5586 6.33822 14.8445ZM16.5264 5.23424C15.7881 4.42529 15.509 3.60854 15.4081 3.03479H16.3367C16.3367 3.03479 16.1516 4.53918 17.501 6.01861L17.5197 6.0385C17.156 5.80972 16.8225 5.53968 16.5264 5.23424ZM21 7.52768V10.7198C21 10.7198 19.815 10.6734 18.938 10.4503C17.7135 10.1382 16.9264 9.65965 16.9264 9.65965C16.9264 9.65965 16.3827 9.31837 16.3388 9.29457V15.8863C16.3388 16.2533 16.2382 17.1699 15.9318 17.9344C15.5318 18.9345 14.9144 19.5909 14.8009 19.7251C14.8009 19.7251 14.05 20.6124 12.7254 21.21C11.5314 21.749 10.4831 21.7354 10.1697 21.749C10.1697 21.749 8.35753 21.8208 6.72686 20.761C6.37424 20.5274 6.04508 20.2629 5.74365 19.9708L5.75179 19.9767C7.38287 21.0364 9.19464 20.9646 9.19464 20.9646C9.5084 20.951 10.5567 20.9646 11.7503 20.4256C13.0738 19.828 13.8258 18.9407 13.8258 18.9407C13.9381 18.8065 14.5583 18.1501 14.9567 17.1496C15.2624 16.3855 15.3637 15.4685 15.3637 15.1015V8.51059C15.4076 8.53477 15.9509 8.87606 15.9509 8.87606C15.9509 8.87606 16.7384 9.35503 17.9629 9.66667C18.8403 9.88978 20.025 9.93619 20.025 9.93619V7.43485C20.4303 7.52573 20.7758 7.55031 21 7.52768Z" fill="black" />
+                                <path d="M20.0252 7.43485V9.93541C20.0252 9.93541 18.8405 9.889 17.9631 9.66589C16.7386 9.35386 15.9511 8.87528 15.9511 8.87528C15.9511 8.87528 15.4078 8.53399 15.3639 8.50981V15.1023C15.3639 15.4693 15.2634 16.3863 14.9569 17.1504C14.5569 18.1509 13.9395 18.8073 13.826 18.9415C13.826 18.9415 13.0747 19.8288 11.7505 20.4264C10.5569 20.9654 9.50859 20.9518 9.19483 20.9654C9.19483 20.9654 7.38306 21.0372 5.75198 19.9774L5.74384 19.9716C5.57163 19.8048 5.40953 19.6288 5.25834 19.4442C4.73784 18.8096 4.41879 18.0592 4.33862 17.8451C4.33848 17.8442 4.33848 17.8432 4.33862 17.8423C4.20961 17.4702 3.93858 16.5767 3.97561 15.7112C4.04113 14.1841 4.57831 13.2469 4.72034 13.0121C5.09649 12.3718 5.58572 11.7989 6.16626 11.3189C6.67855 10.9047 7.25921 10.5752 7.88443 10.3438C8.56031 10.0721 9.28406 9.92649 10.0169 9.91474V12.4461C10.0169 12.4461 8.67636 12.021 7.60363 12.7737C6.85361 13.3307 6.4556 13.8741 6.3384 14.8445C6.33352 15.5586 6.51624 16.5692 7.51857 17.2432C7.63551 17.3173 7.75027 17.3831 7.86286 17.4406C8.03797 17.6682 8.2511 17.8666 8.49364 18.0276C9.47278 18.6474 10.2932 18.6907 11.3423 18.2882C12.0419 18.019 12.5685 17.4125 12.8127 16.7405C12.9661 16.3208 12.9641 15.8984 12.9641 15.4615V3.03479H15.4058C15.5067 3.60854 15.7859 4.42529 16.5241 5.23424C16.8202 5.53968 17.1538 5.80972 17.5175 6.0385C17.6249 6.14966 18.1743 6.69923 18.8796 7.03662C19.2442 7.21102 19.6286 7.34464 20.0252 7.43485Z" fill="black" />
+                                <path d="M3.3667 17.0677V17.0697L3.42729 17.2339C3.42033 17.2148 3.39781 17.1567 3.3667 17.0677Z" fill="black" />
+                                <path d="M7.88461 10.3437C7.25939 10.5751 6.67873 10.9047 6.16644 11.3188C5.58572 11.7999 5.09661 12.374 4.72093 13.0155C4.57891 13.2495 4.04172 14.1876 3.9762 15.7146C3.93917 16.5801 4.2102 17.4737 4.33921 17.8458C4.33907 17.8467 4.33907 17.8476 4.33921 17.8485C4.4206 18.0607 4.73843 18.8112 5.25893 19.4477C5.41012 19.6322 5.57222 19.8083 5.74443 19.975C5.19268 19.6093 4.7006 19.1671 4.28427 18.6629C3.76825 18.0338 3.45001 17.2912 3.36699 17.072C3.36689 17.0704 3.36689 17.0688 3.36699 17.0673V17.0645C3.23758 16.6928 2.96573 15.7989 3.00358 14.9322C3.0691 13.4052 3.60628 12.4679 3.74831 12.2331C4.12388 11.5915 4.613 11.0174 5.19382 10.5364C5.706 10.1221 6.28669 9.79254 6.91199 9.56131C7.30202 9.40621 7.70833 9.29179 8.1239 9.22002C8.75019 9.11524 9.38984 9.10616 10.0191 9.19311V9.91469C9.2856 9.92619 8.56113 10.0718 7.88461 10.3437Z" fill="black" />
+                                <path d="M15.4078 3.03476H12.9661V15.4619C12.9661 15.8987 12.9661 16.32 12.8147 16.7408C12.5681 17.4125 12.0435 18.019 11.3444 18.2881C10.2948 18.6922 9.47442 18.6474 8.49569 18.0276C8.25273 17.8673 8.03905 17.6696 7.86328 17.4425C8.69713 17.8688 9.44349 17.8614 10.3681 17.5057C11.0668 17.2366 11.5922 16.6301 11.838 15.958C11.9919 15.5383 11.9898 15.1159 11.9898 14.6795V2.25H15.3615C15.3615 2.25 15.3236 2.55891 15.4078 3.03476ZM20.0252 6.74328V7.43483C19.6293 7.34447 19.2456 7.21085 18.8816 7.0366C18.1764 6.69921 17.627 6.14964 17.5195 6.03848C17.6442 6.11693 17.7736 6.1883 17.907 6.25222C18.7644 6.66255 19.6089 6.78502 20.0252 6.74328Z" fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list grid">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">About</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Episodes</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Testimonials</a>
+                        </li>
+
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Pricing</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Features</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item">
+                            <p class="footer__contacts-title">Listen to episodes on your fav platform:</p>
+                            <div class="footer__contacts-platforms">
+                                <a href="" class="footer__contacts-link">
+                                    <img src="./images/footer/google-podcast.png" alt="" class="footer__contacts-logo">
+                                </a>
+                                <a href="" class="footer__contacts-link">
+                                    <img src="./images/footer/spotify.png" alt="" class="footer__contacts-logo">
+                                </a>
+                                <a href="" class="footer__contacts-link">
+                                    <img src="./images/footer/youtube.png" alt="" class="footer__contacts-logo">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <p class="footer__contacts-title">App available on:</p>
+                            <div class="footer__contacts-platforms">
+                                <a href="" class="footer__contacts-link">
+                                    <img src="./images/footer/app-store.png" alt="" class="footer__contacts-logo">
+                                </a>
+                                <a href="" class="footer__contacts-link">
+                                    <img src="./images/footer/google-play.png" alt="" class="footer__contacts-logo">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">©2022. All Rights Reserved.
+                    <span class="footer__copyright-text footer__copyright-text--accent">Pod of Cast</span> 
+                </p>
+                <div class="footer__copyright-links">
+                    <p class="footer__copyright-terms">Terms</p>
+                    <p class="footer__copyright-point">•</p>
+                    <p class="footer__copyright-privacy">Privacy</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

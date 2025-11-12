@@ -1,0 +1,118 @@
+@use '../helpers' as *;
+
+.form {
+    display: grid;
+    gap: rem(40) rem(20);
+    padding-top: rem(40);
+    border-top: rem(0.5) solid var(--color-gray);
+
+    @include mobile-above {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(16);
+
+        &.is-full {
+            grid-column: -1 / 1;
+        }
+    }
+
+    &__label {
+        position: relative;
+        align-self: start;
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 160%;
+        color: var(--color-black);
+
+        &--required {
+            &::after {
+                content: '*';
+                position: absolute;
+                color: var(--color-accent);
+                top: rem(0);
+                right: rem(-7);
+                display: flex;
+                width: rem(5);
+                height: rem(5);
+            }
+        }
+    }
+
+    &__input {
+        padding: rem(20);
+        border: rem(1.5) solid var(--color-black);
+        border-radius: rem(8);
+        font-weight: 700;
+        line-height: 160%;
+
+        &:focus {
+            border-color: var(--color-accent);
+            outline: none;
+            box-shadow: 0 0 0 rem(2) rgba(205, 70, 49, 0.1);
+        }
+    }
+
+    &__actions {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.is-full {
+            grid-column: -1 / 1;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__info,
+    &__description {
+        @include abs-y;
+
+        @include mobile {
+            position: relative;
+        }
+    }
+
+    &__info {
+        right: 0;
+
+        @include mobile-above {
+            width: 25%;
+        }
+
+        a {
+            color: var(--color-accent);
+        }
+    }
+
+    &__description {
+        left: 0;
+        padding-left: rem(7);
+
+        &--required {
+            &::before {
+                content: '*';
+                padding-left: rem(7);
+                position: absolute;
+                color: var(--color-accent);
+                top: rem(0);
+                left: rem(-7);
+                display: flex;
+                width: rem(5);
+                height: rem(5);
+            }
+        }
+    }
+
+    &__button {
+        padding: rem(20) rem(36);
+    }
+}

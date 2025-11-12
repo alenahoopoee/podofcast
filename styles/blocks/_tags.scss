@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.tags {
+    display: flex;
+    column-gap: rem(60);
+    align-items: center;
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 160%;
+        color: var(--color-gray);
+    }
+
+    &__list {
+        display: flex;
+        column-gap: rem(6);
+    }
+
+    &__item {
+        padding: rem(6) rem(12);
+        border: rem(1) solid var(--color-gray);
+        border-radius: rem(4);
+
+        p {
+            font-size: rem(14);
+            line-height: 160%;
+            color: var(--color-gray);
+        }
+    }
+}

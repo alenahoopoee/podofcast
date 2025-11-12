@@ -1,0 +1,119 @@
+@use '../helpers' as *;
+
+.episodes {
+    overflow-x: clip;
+    background-color: var(--color-light-accent);
+
+    &--bg-white {
+        background-color: inherit;
+    }
+
+    &--with-illustration {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-60);
+            right: 0;
+            display: flex;
+            width: rem(120);
+            height: rem(120);
+            background: url(../../images/about/metrics-illustration.svg) center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__inner {
+        padding-block: rem(140);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(100);
+
+        @include mobile {
+            row-gap: rem(60);
+        }
+    }
+
+    &__title {
+        &--with-illustration {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: rem(-75);
+                left: rem(-80);
+                display: flex;
+                width: rem(120);
+                height: rem(120);
+                background: url(../../images/sponsor/illustration-left-top.png) center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        position: relative;
+        gap: rem(20);
+
+        @include mobile-above {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--with-illustration-top {
+            &::after {
+                content: '';
+                position: absolute;
+                top: rem(-150);
+                right: rem(-150);
+                display: flex;
+                width: rem(240);
+                height: rem(240);
+                background: url(../../images/episodes/illustration-right.png) center no-repeat;
+                background-size: contain;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+
+        &--with-illustration-bottom {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: rem(-160);
+                left: rem(-120);
+                display: flex;
+                width: rem(240);
+                height: rem(240);
+                background: url(../../images/episodes/illustration-bottom.svg) center no-repeat;
+                background-size: contain;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__button {
+        align-self: center;
+        padding: rem(20) rem(36);
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 160%;
+
+        @include mobile-s {
+            width: 100%;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(100);
+    }
+}

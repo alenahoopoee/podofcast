@@ -1,0 +1,65 @@
+@use '../helpers' as *;
+
+.gallery {
+    overflow-x: hidden;
+    background-color: var(--color-light-accent);
+
+    &__list {
+        display: flex;
+        column-gap: rem(20);
+        animation: ticker-animation 60s linear infinite;
+    }
+
+    &__item {
+        flex-shrink: 0;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    @keyframes ticker-animation {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        .ticker__wrapper {
+            animation-duration: 100s;
+        }
+    }
+
+    &__image {
+        border-radius: rem(8);
+        width: fluid(373, 300);
+        height: fluid(373, 300);
+        object-fit: cover;
+
+        @include mobile {
+            width: fluid(300, 200);
+            height: fluid(300, 200);
+        }
+    }
+
+    &__platform {
+        position: absolute;
+        right: rem(20);
+        top: rem(20);
+    }
+
+    &__title {
+        position: absolute;
+        left: rem(20);
+        bottom: rem(20);
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: -0.08em;
+        color: var(--color-blue);
+
+        @include mobile {
+            font-size: rem(20);
+        }
+    }
+}

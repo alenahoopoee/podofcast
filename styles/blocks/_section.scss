@@ -1,0 +1,52 @@
+@use '../helpers' as *;
+
+.section {
+    &--illustration {
+        &-accent {
+            position: relative;
+
+            &::after {
+                content: '';
+                @include abs-x;
+                top: 0%;
+                transform: translateY(-50%);
+                display: flex;
+                width: rem(150);
+                height: rem(150);
+                background: url(../../images/section/illu-accent.svg) center no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &-black {
+            position: relative;
+
+            &::after {
+                content: '';
+                @include abs-x;
+                top: 0%;
+                transform: translateY(-50%);
+                display: flex;
+                width: rem(150);
+                height: rem(150);
+                background: url(../../images/section/illu-black.svg) center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__description {
+        line-height: 160%;
+        text-align: center;
+        color: var(--color-gray);
+
+        @include fluid-text(22, 20);
+    }
+}

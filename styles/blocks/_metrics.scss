@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+.metrics {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: var(--color-light-accent);
+        z-index: -1;
+    }
+
+    &__inner {
+        position: relative;
+
+        &::after {
+            content: '';
+            right: rem(-120);
+            display: flex;
+            width: rem(120);
+            height: rem(120);
+            background: url(../../images/about/metrics-illustration.svg) center no-repeat;
+            background-size: contain;
+
+            @include abs-y;
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: rem(20);
+
+        @include mobile-above {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: rem(60);
+        row-gap: rem(20);
+        border: rem(1.5) solid var(--color-black);
+        border-radius: rem(8);
+        box-shadow: var(--shadow-accent);
+        background-color: var(--color-white);
+
+        @include tablet {
+            padding: rem(30);
+        }
+    }
+
+    &__key {
+        line-height: 160%;
+        text-align: center;
+        color: var(--color-gray);
+    }
+
+    &__value {
+        &--accent {
+            color: var(--color-accent);
+        }
+    }
+}

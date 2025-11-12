@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.become-sponsor {
+    @include tablet {
+        overflow-x: hidden;
+    }
+    
+    &__inner {
+        padding-block: rem(140);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(100);
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-70);
+            left: rem(-75);
+            display: flex;
+            width: rem(120);
+            height: rem(120);
+            background: url(../../images/sponsor/illustration-left-top.png) center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__body {
+        position: relative;
+
+        &-list {
+            display: grid;
+            gap: rem(20);
+
+            @include tablet-above {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        &-illustration-right {
+            position: absolute;
+            right: rem(-75);
+            top: rem(-68);
+            z-index: -1;
+        }
+
+        &-illustration-left-bottom {
+            position: absolute;
+            left: rem(-75);
+            bottom: rem(-40);
+            z-index: -1;
+        }
+    }
+}

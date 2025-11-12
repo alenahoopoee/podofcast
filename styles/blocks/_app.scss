@@ -1,0 +1,146 @@
+@use '../helpers' as *;
+
+.app {
+    position: relative;
+    overflow-x: clip;
+    background-color: var(--color-light-blue);
+
+    &__illustration {
+        &-right,
+        &-left {
+            max-width: rem(373);
+            position: absolute;
+            bottom: 0px;
+
+            @include laptop {
+                max-width: rem(303);
+            }
+
+            @include tablet {
+                max-width: rem(243);
+            }
+        }
+
+        &-left {
+            @include mobile {
+                left: rem(-40);
+            }
+        }
+
+        &-right {
+            right: 0;
+            z-index: 2;
+
+            @include tablet {
+                right: rem(-50);
+            }
+
+            @include mobile {
+                right: rem(-90);
+                bottom: rem(-80);
+            }
+        }
+
+        &-sparkle {
+            position: absolute;
+
+            &-big {
+                width: rem(130);
+                left: 0;
+                bottom: 34%;
+            }
+
+            &-medium {
+                width: rem(80);
+                left: 8%;
+                bottom: 42%;
+            }
+
+            &-small {
+                width: rem(35);
+                left: 6%;
+                bottom: 53%;
+            }
+        }
+
+        &-circle {
+            position: absolute;
+            right: 7%;
+            bottom: 0;
+
+            @include tablet {
+                right: 0%;
+            }
+        }
+    }
+
+    &__inner {
+        padding-block: rem(140);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(140);
+
+        @include tablet {
+            padding-block: rem(100);
+        }
+
+        @include mobile {
+            row-gap: rem(100);
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: rem(20);
+        text-align: center;
+    }
+
+    &__marks {
+        padding: rem(3) rem(6);
+        border: rem(1) solid var(--color-accent);
+        border-radius: rem(4);
+        font-weight: 700;
+        color: var(--color-accent);
+        
+        @include fluid-text(14, 12);
+    }
+
+    &__action {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(24);
+
+        &-illustration {
+            position: absolute;
+            right: rem(-70);
+            top: rem(-70);
+        }
+
+        &-button {
+            align-self: center;
+            padding: rem(20) rem(36);
+        }
+    }
+
+    &__soc1al {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+        align-items: center;
+        text-align: center;
+
+        &-text {
+            color: var(--color-gray);
+            @include fluid-text(14, 12);
+        }
+
+        &-list {
+            display: flex;
+            column-gap: rem(20);
+        }
+    }
+}

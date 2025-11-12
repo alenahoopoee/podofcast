@@ -1,0 +1,59 @@
+@use '../helpers' as *;
+
+.about {
+    padding-top: rem(20);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(30);
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            border-radius: rem(8);
+        }
+    }
+
+    &__body {
+        padding-top: rem(30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(80);
+
+        @include mobile {
+            row-gap: rem(50);
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        text-align: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-65);
+            left: rem(-75);
+            display: flex;
+            width: rem(120);
+            height: rem(120);
+            background: url(../../images/sponsor/illustration-left-top.png) center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__text {
+        column-gap: rem(30);
+        line-height: 160%;
+        color: var(--color-gray);
+        padding-bottom: rem(80);
+        border-bottom: rem(0.5) solid var(--color-gray);
+
+        @include mobile-above {
+            column-count: 2;
+        }
+    }
+}

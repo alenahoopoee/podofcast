@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.soc1al {
+    &__list {
+        display: flex;
+        column-gap: rem(25);
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        transition-duration: var(--transition-duration);
+
+        svg {
+            @include hover {
+                fill: var(--color-accent);
+            }
+        }
+    }
+}

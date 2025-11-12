@@ -1,0 +1,94 @@
+@use '../helpers' as *;
+
+.benefits {
+    &__inner {
+        padding-block: rem(140);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(100);
+
+        @include mobile {
+            row-gap: rem(60);
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-150);
+            right: rem(-100);
+            display: flex;
+            width: rem(240);
+            height: rem(240);
+            background: url(../../images/benefits/illustration-right.svg) center no-repeat;
+            background-size: contain;
+
+            @include mobile {
+                width: rem(140);
+                height: rem(140);
+                top: rem(-100);
+                right: rem(-50);
+            }
+
+            @include mobile-s {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        --cols: 2;
+
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        gap: rem(80) rem(20);
+
+        @include mobile-above {
+            --cols: 3;
+        }
+
+        @include mobile {
+            gap: rem(40) rem(10);
+        }
+
+        @include mobile-s {
+            --cols: 1;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: rem(30);
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(10);
+        }
+
+        &-description {
+            font-weight: 500;
+            line-height: 160%;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        align-self: center;
+        padding: rem(20) rem(36);
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 160%;
+
+        @include mobile-s {
+            width: 100%;
+        }
+    }
+}

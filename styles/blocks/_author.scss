@@ -1,0 +1,41 @@
+@use '../helpers' as *;
+
+.author {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: rem(20) rem(10);
+    align-items: center;
+    justify-content: center;
+
+    @include mobile-s {
+        grid-template-columns: repeat(rem(40), auto);
+    }
+
+    &__avatar {
+        border-radius: 50%;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: 160%;
+    }
+
+    &__position {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(8);
+
+        @include mobile-s {
+            grid-column: -1 / 1;
+        }
+    }
+
+    &__post {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 160%;
+    }
+}

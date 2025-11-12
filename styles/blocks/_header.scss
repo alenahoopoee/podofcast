@@ -1,0 +1,192 @@
+@use '../helpers' as *;
+
+.header {
+    position: relative;
+    z-index: 100;
+    padding-top: rem(24);
+    background-color: var(--color-light-accent);
+
+    &__body {
+        &-inner {
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+
+            @include mobile {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__overlay {
+        @include mobile-above {
+            display: contents;
+        }
+
+        @include mobile {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3rem;
+            padding: 1rem;
+            background-color: var(--color-light-accent);
+            transition-duration: var(--transition-duration);
+
+            &:not(.is-active) {
+                @include hide;
+
+                translate: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        margin-left: rem(120);
+
+        @include tablet {
+            margin-left: rem(20);
+        }
+
+        @include mobile {
+            overflow-y: auto;
+            margin-left: 0;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: fluid(60, 20);
+
+            @include mobile {
+                flex-direction: column;
+                row-gap: 1rem;
+                align-items: start;
+            }
+        }
+
+        &-item {
+            position: relative;
+
+            @include hover {
+                cursor: pointer;
+                color: var(--color-accent);
+            }
+
+            &.has-children {
+                position: relative;
+                padding-right: rem(20);
+
+                &::after {
+                    content: '';
+                    background-image: url('../../icons/arrow-down.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    position: absolute;
+                    width: rem(16);
+                    height: rem(16);
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: transform 0.3s ease;
+                }
+
+                @include mobile {
+                    .header__menu-link {
+                        display: none;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                @include hover {
+                    &::after {
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        &-link {
+            position: relative;
+            padding: rem(6);
+            font-weight: 700;
+            font-size: rem(16);
+            line-height: 160%;
+        }
+    }
+
+    &__submenu {
+        &-list {
+            @include mobile-above {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: rem(200);
+                background-color: var(--color-white);
+                border: 1px solid #e0e0e0;
+                border-radius: rem(8);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                list-style: none;
+                margin: 0;
+                padding: 0.5rem 0;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px);
+                transition: all 0.3s ease;
+                z-index: 1000;
+            }
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                row-gap: 1rem;
+            }
+
+            &.is-open {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+
+        &-link {
+            display: block;
+            padding: rem(6);
+            color: var(--color-black);
+            font-size: rem(16);
+            transition: background-color 0.2s ease, color 0.2s ease;
+
+            @include mobile-above {
+                padding: rem(10) rem(20);
+            }
+
+            @include mobile {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__actions {
+        margin-left: auto;
+        display: flex;
+        column-gap: rem(20);
+
+        &-link {
+            font-weight: 700;
+            padding: rem(12) rem(24);
+
+            @include tablet {
+                padding: rem(8) rem(18);
+            }
+        }
+    }
+}

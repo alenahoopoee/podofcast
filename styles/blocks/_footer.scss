@@ -1,0 +1,135 @@
+@use '../helpers' as *;
+
+.footer {
+    padding-top: rem(140);
+    padding-bottom: rem(60);
+
+    @include tablet {
+        padding-top: rem(100);
+        padding-bottom: rem(40);
+    }
+
+    @include mobile {
+        padding-top: rem(80);
+        padding-bottom: rem(30);
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(140);
+
+        @include tablet {
+            row-gap: rem(100);
+        }
+
+        @include mobile {
+            row-gap: rem(80);
+        }
+    }
+
+    &__body {
+        --cols: 3;
+
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        column-gap: rem(20);
+        row-gap: rem(60);
+
+        @include tablet {
+            --cols: 2;
+        }
+
+        @include mobile {
+            --cols: 1;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(40);
+
+        &-header {
+            display: flex;
+            align-items: baseline;
+            column-gap: rem(24);
+        }
+
+        &-image {
+            width: rem(74);
+        }
+
+        &-date {
+            transform: translateY(-5px);
+            color: var(--color-gray);
+            @include fluid-text(12, 10);
+        }
+
+        &-description {
+            color: var(--color-gray);
+            @include fluid-text(14, 12);
+        }
+    }
+
+    &__menu {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: rem(90);
+            row-gap: rem(20);
+        }
+
+        &-link {
+            &--accent {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    &__contacts {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(60);
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(30);
+        }
+
+        &-title {
+            color: var(--color-gray);
+        }
+
+        &-platforms {
+            display: flex;
+            column-gap: rem(35);
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        border-top: rem(0.5) solid var(--color-gray);
+        padding-top: rem(20);
+
+        &-text {
+            color: var(--color-gray);
+            @include fluid-text(12, 10);
+
+            &--accent {
+                color: var(--color-accent);
+            }
+        }
+
+        &-links {
+            display: flex;
+            column-gap: rem(10);
+            color: var(--color-gray);
+            @include fluid-text(12, 10);
+        }
+    }
+}

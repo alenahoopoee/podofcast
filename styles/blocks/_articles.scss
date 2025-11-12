@@ -1,0 +1,80 @@
+@use '../helpers' as *;
+
+.articles {
+    overflow-x: clip;
+
+    &--bg-light-accent {
+        background-color: var(--color-light-accent);
+    }
+
+    @include tablet {
+        overflow-x: hidden;
+    }
+
+    &__inner {
+        padding-block: rem(140);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(100);
+
+        @include mobile {
+            row-gap: rem(60);
+        }
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(100);
+
+        &-list {
+            position: relative;
+            display: flex;
+            gap: rem(20);
+
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+
+        &-item {
+            display: flex;
+        }
+
+        &-link {
+            &.is-full {
+                grid-column: -1 / 1;
+            }
+        }
+    }
+
+    &__illustration-left {
+        position: absolute;
+        left: rem(-96);
+        top: rem(-75);
+        z-index: 1;
+    }
+
+    &__illustration-right {
+        position: absolute;
+        right: rem(-135);
+        bottom: rem(-205);
+        z-index: 1;
+    }
+
+    &__button {
+        align-self: center;
+        padding: rem(20) rem(36);
+    }
+
+    &__list {
+        display: grid;
+        gap: rem(40) rem(20);
+
+        @include mobile-above {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

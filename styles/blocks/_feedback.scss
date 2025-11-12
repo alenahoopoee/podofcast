@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.feedback {
+    padding-block: rem(140);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(60);
+        align-items: center;
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: rem(-20);
+            right: rem(-40);
+            display: flex;
+            width: rem(70);
+            height: rem(31);
+            background: url(../../images/feedback/illu-title.svg) center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__form {
+        width: 80%;
+
+        @include mobile-s {
+            width: 100%;
+        }
+    }
+}

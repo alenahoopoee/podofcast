@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: rem(8);
+    cursor: pointer;
+
+    @include fluid-text(14, 12);
+
+    @include mobile-s {
+        width: 100%;
+    }
+
+    &--transparent {
+        color: var(--color-black);
+        background-color: transparent;
+        border: rem(2) solid var(--color-black);
+
+        &-shadow {
+            box-shadow: var(--shadow-gray);
+        }
+    }
+
+    &--black {
+        border: rem(2) solid var(--color-black);
+        color: var(--color-white);
+        background-color: var(--color-black);
+        box-shadow: rem(6) rem(6) 0 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &--small-black {
+        box-shadow: rem(3) rem(3) 0 0 rgba(0, 0, 0, 0.25);
+    }
+}

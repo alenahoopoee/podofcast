@@ -1,0 +1,136 @@
+@use '../helpers' as *;
+
+.episode-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    padding: rem(16);
+    border: rem(2) solid var(--color-black);
+    border-radius: rem(12);
+    background-color: var(--color-white);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+
+    @include hover {
+        box-shadow: var(--shadow-blue);
+
+        .episode-card__header-title {
+            color: var(--color-accent);
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(20);
+
+        @include mobile-s {
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper-image {
+        max-width: rem(166);
+        position: relative;
+
+        @include mobile-s {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__platform {
+        width: rem(48);
+        position: absolute;
+        top: rem(10);
+        right: rem(10);
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(15);
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(4);
+
+        &-number {
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+
+        &-title {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--color-black);
+
+            @include fluid-text(22, 20);
+        }
+    }
+
+    &__description {
+        font-size: rem(14);
+        line-height: 160%;
+        color: var(--color-gray);
+        padding-top: rem(10);
+        border-top: rem(0.5) solid var(--color-gray);
+    }
+
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tags {
+        &-list {
+            display: flex;
+            column-gap: rem(6);
+            align-items: center;
+        }
+
+        &-item {
+            border: rem(1) solid var(--color-gray);
+            border-radius: rem(4);
+            padding: rem(6) rem(12);
+        }
+
+        &-text {
+            font-size: rem(12);
+            line-height: 160%;
+            color: var(--color-gray);
+        }
+    }
+
+    &__hosted {
+        display: flex;
+        column-gap: rem(10);
+        align-items: center;
+
+        &-text {
+            font-weight: 700;
+            font-size: rem(12);
+            line-height: 160%;
+            color: var(--color-gray);
+        }
+
+        &-avatars {
+            display: flex;
+        }
+
+        &-photo {
+            &:not(:last-child){
+                margin-right: rem(-10);
+            }
+
+        }
+    }
+    
+}

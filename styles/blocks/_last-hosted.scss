@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+
+.last-hosted {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+
+    &__text {
+        display: flex;
+        column-gap: rem(5);
+        font-size: rem(14);
+        line-height: 160%;
+        color: var(--color-gray);
+
+        &--accent {
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+    }
+
+    &__date {
+        margin-left: auto;
+        font-size: rem(14);
+        line-height: 160%;
+        color: var(--color-gray);
+    }
+}

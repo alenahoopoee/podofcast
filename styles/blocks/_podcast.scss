@@ -1,0 +1,111 @@
+@use '../helpers' as *;
+
+.podcast {
+    position: relative;
+    padding-block: rem(100) rem(40);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(80);
+    z-index: 10;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1rem;
+    }
+
+    &__wrapper-image {
+        position: relative;
+    }
+
+    &__image {
+        min-width: rem(472);
+        border-radius: rem(8);
+    }
+
+    &__platform,
+    &__name {
+        position: absolute;
+    }
+
+    &__platform {
+        width: rem(116);
+        top: rem(25);
+        right: rem(25);
+    }
+
+    &__name {
+        bottom: rem(25);
+        left: rem(25);
+        color: var(--color-blue);
+    }
+
+    &__info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            width: 70%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: rem(16);
+
+        &-subtitle {
+            font-weight: 700;
+            line-height: 160%;
+            color: var(--color-accent);
+        }
+
+        &-marks {
+            border: rem(1) solid var(--color-accent);
+            border-radius: rem(4);
+            padding: rem(3) rem(6);
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: rem(14);
+            line-height: 160%;
+            color: var(--color-accent);
+        }
+    }
+
+    &__title {
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        padding-bottom: rem(23);
+    }
+
+    &__description {
+        padding-block: rem(20) rem(40);
+        border-top: rem(1) solid var(--color-black);
+        line-height: 160%;
+        color: var(--color-gray);
+    }
+
+    &__actions {
+        padding-top: rem(60);
+        display: flex;
+        column-gap: rem(20);
+    }
+
+    &__button {
+        padding: rem(20) rem(36);
+        border: rem(2) solid var(--color-black);
+        box-shadow: var(--shadow-gray);
+
+        &-text {
+            font-weight: 700;
+            font-size: rem(14);
+            line-height: 160%;
+
+            &--accent {
+                color: var(--color-accent);
+            }
+        }
+    }
+}

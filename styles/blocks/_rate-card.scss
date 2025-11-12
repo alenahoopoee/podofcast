@@ -1,0 +1,135 @@
+@use '../helpers' as *;
+
+.rate-card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 60% auto;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    &__body {
+        padding: rem(60) rem(40) rem(30);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(90);
+        border-radius: rem(8);
+
+        @include mobile {
+            padding: rem(40) rem(20) rem(15);
+        }
+
+        &--normal {
+            border: rem(1.5) solid var(--color-black);
+            background-color: var(--color-white);
+        }
+
+        &--accent {
+            border: rem(1.5) solid var(--color-accent);
+            background-color: var(--color-light-accent);
+        }
+    }
+
+    &__name {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+
+        &-title {
+            position: relative;
+        }
+
+        &-description {
+            line-height: 160%;
+            color: var(--color-gray);
+
+            @include fluid-text(14, 12);
+        }
+    }
+
+    &__marks {
+        position: absolute;
+        right: 0px;
+        top: rem(10);
+        padding: rem(3) rem(6);
+        border-radius: rem(4);
+        font-weight: 700;
+        color: var(--color-white);
+        background-color: var(--color-accent);
+
+        @include fluid-text(12, 10);
+    }
+
+    &__subscribe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        padding: rem(20) rem(36);
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+
+        &-value {
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: var(--color-accent);
+
+            @include fluid-text(22, 20);
+        }
+
+        &-month {
+            color: var(--color-gray);
+            @include fluid-text(14, 12);
+        }
+    }
+
+    &__included {
+        flex: 1;
+        padding: rem(40) rem(40) rem(60);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+        border-radius: rem(8);
+
+        &--normal {
+            border: rem(1.5) solid var(--color-black);
+            background-color: var(--color-white);
+        }
+
+        &--accent {
+            border: rem(1.5) solid var(--color-accent);
+            background-color: var(--color-light-accent);
+        }
+
+        &-title {
+            font-weight: 700;
+            color: var(--color-gray);
+            @include fluid-text(14, 12);
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(10);
+        }
+
+        &-text {
+            &--bold {
+                font-weight: 700;
+            }
+        }
+    }
+}
