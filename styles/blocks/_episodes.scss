@@ -19,7 +19,7 @@
             display: flex;
             width: rem(120);
             height: rem(120);
-            background: url(../../images/about/metrics-illustration.svg) center no-repeat;
+            background: url(../images/about/metrics-illustration.svg) center no-repeat;
             background-size: contain;
         }
     }
@@ -47,7 +47,7 @@
                 display: flex;
                 width: rem(120);
                 height: rem(120);
-                background: url(../../images/sponsor/illustration-left-top.png) center no-repeat;
+                background: url(../images/sponsor/illustration-left-top.png) center no-repeat;
                 background-size: contain;
             }
         }
@@ -71,7 +71,7 @@
                 display: flex;
                 width: rem(240);
                 height: rem(240);
-                background: url(../../images/episodes/illustration-right.png) center no-repeat;
+                background: url(../images/episodes/illustration-right.png) center no-repeat;
                 background-size: contain;
 
                 @include tablet {
