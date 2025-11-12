@@ -607,7 +607,7 @@ button[aria-label]::before {
 }
 .header__menu-item.has-children::after {
   content: "";
-  background-image: url("../../icons/arrow-down.svg");
+  background-image: url("../icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1805,7 +1805,7 @@ button[aria-label]::before {
   display: flex;
   width: 15rem;
   height: 15rem;
-  background: url(../../images/episodes/illustration-bottom.svg) center no-repeat;
+  background: url(../images/episodes/illustration-bottom.svg) center no-repeat;
   background-size: contain;
 }
 @media (width <= 63.99875rem) {
@@ -1853,7 +1853,7 @@ button[aria-label]::before {
   display: flex;
   width: 7.5rem;
   height: 7.5rem;
-  background: url(../../images/sponsor/illustration-left-top.png) center no-repeat;
+  background: url(../images/sponsor/illustration-left-top.png) center no-repeat;
   background-size: contain;
 }
 .become-sponsor__body {
